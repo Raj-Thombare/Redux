@@ -1,12 +1,12 @@
 import classes from "./Counter.module.css";
 import { useSelector, useDispatch } from "react-redux";
-import { counterActions } from "../store/index";
+import { counterActions } from "../store/counter";
 
 const Counter = () => {
   // useSelector automatically subscribes to the Redux store
   // whenever useSelector get updated state, it causes component to re-render!
   const counter = useSelector((state) => state.counter.counter);
-  const show = useSelector((state) => state.counter.showCounter); 
+  const show = useSelector((state) => state.counter.showCounter);
   const dispatch = useDispatch();
 
   const incrementHandler = () => {

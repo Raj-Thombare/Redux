@@ -21,7 +21,7 @@ const counterSlice = createSlice({
   },
 });
 
-export const counterActions = counterSlice.actions;
+export const { increment, decrement, increase, toggle } = counterSlice.actions;
 // counterSlice.actions.toggle() --> returns an action object {type:'auto generated unique identifier'}
 // redux-toolkit automatically creates SOME_UNIQUE_IDENTIFIER actions
 
